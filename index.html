@@ -1,37 +1,58 @@
-<div class="calculator">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="output">
-        <div class="expression">22+33</div>
-        <div class="result">55</div>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="./assets/scripts/main.js" defer></script>
+</head>
+
+<body>
+    <div class="calculator">
+
+        <div class="output">
+            <div class="expression">22+33</div>
+            <div class="result">55</div>
+        </div>
+
+        <div class="keypad">
+
+            <button type="button" data-action="clear" class="allClear">AC</button>
+            <button type="button" data-action="toggle-sign">+/-</button>
+            <button type="button" data-value="%">%</button>
+            <button type="button" data-value="/">/</button>
+
+            <button type="button" data-value="7">7</button>
+            <button type="button" data-value="8">8</button>
+            <button type="button" data-value="9">9</button>
+            <button type="button" data-value="*">*</button>
+
+            <button type="button" data-value="4">4</button>
+            <button type="button" data-value="5">5</button>
+            <button type="button" data-value="6">6</button>
+            <button type="button" data-value="-">-</button>
+
+            <button type="button" data-value="1">1</button>
+            <button type="button" data-value="2">2</button>
+            <button type="button" data-value="3">3</button>
+            <button type="button" data-value="+">+</button>
+
+            <button type="button" data-value="0">0</button>
+            <button type="button" data-value=".">.</button>
+            <button type="button" data-action="backspace" class="backspace">⌫</button>
+            <button type="button" data-action="calculate" class="equals">=</button>
+
+        </div>
+
     </div>
+</body>
 
-    <div class="keypad">
-
-        <button type="button" data-action="clear" class="allClear">AC</button>
-        <button type="button" data-action="toggle-sign">+/-</button>
-        <button type="button" data-value="%">%</button>
-        <button type="button" data-value="/">/</button>
-
-        <button type="button" data-value="7">7</button>
-        <button type="button" data-value="8">8</button>
-        <button type="button" data-value="9">9</button>
-        <button type="button" data-value="*">*</button>
-
-        <button type="button" data-value="4">4</button>
-        <button type="button" data-value="5">5</button>
-        <button type="button" data-value="6">6</button>
-        <button type="button" data-value="-">-</button>
-
-        <button type="button" data-value="1">1</button>
-        <button type="button" data-value="2">2</button>
-        <button type="button" data-value="3">3</button>
-        <button type="button" data-value="+">+</button>
-
-        <button type="button" data-value="0">0</button>
-        <button type="button" data-value=".">.</button>
-        <button type="button" data-action="backspace" class="backspace">⌫</button>
-        <button type="button" data-action="calculate" class="equals">=</button>
-
-    </div>
-
-</div>
+</html>
