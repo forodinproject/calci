@@ -1,1 +1,81 @@
+html {
+    font-size: 62.5%;
+    /* Changes base from 16px to 10px */
+}
 
+body {
+    font-size: 1.6rem;
+    /* Resets the main body text back to 16px */
+}
+
+
+
+body {
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #e9eef1;
+    font-family: system-ui, sans-serif;
+
+
+}
+
+.output {
+    width: 100%;
+    max-width: 500px;
+    text-align: end;
+    margin-bottom: 10px;
+    padding: 10px 14px;
+    color: #2b2f33;
+
+
+    background: #e3e8ec;
+
+    border: 1px solid rgba(255, 255, 255, 0.8);
+
+    box-shadow:
+        inset 2px 2px 5px rgba(0, 0, 0, 0.08),
+        inset -2px -2px 5px rgba(255, 255, 255, 0.9);
+}
+
+.expression {
+    font-size: 2.5rem;
+    opacity: 0.6;
+}
+
+.result {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+
+.keypad {
+    margin-inline: auto;
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+button {
+    flex: 1 1 20%;
+    font-size: 3rem;
+    padding-block: 1rem;
+    background-color: #cbeaef;
+    border-radius: 1rem;
+    cursor: pointer;
+
+}
+
+
+.operator {
+    background-color: #cde3a6;
+}
+
+.backspace,
+.allClear {
+    background-color: #f1ecad;
+}
