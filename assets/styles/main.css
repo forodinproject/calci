@@ -1,48 +1,43 @@
 html {
     font-size: 62.5%;
-    /* Changes base from 16px to 10px */
 }
 
 body {
     font-size: 1.6rem;
-    /* Resets the main body text back to 16px */
-}
-
-
-
-body {
     min-height: 100dvh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #e9eef1;
+    background: #cfd8dc;
     font-family: system-ui, sans-serif;
+}
 
-
+.calculator {
+    width: 100%;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .output {
     width: 100%;
-    max-width: 500px;
-    text-align: end;
-    margin-bottom: 10px;
-    padding: 10px 14px;
-    color: #2b2f33;
-
-
-    background: #e3e8ec;
-
-    border: 1px solid rgba(255, 255, 255, 0.8);
-
-    box-shadow:
-        inset 2px 2px 5px rgba(0, 0, 0, 0.08),
-        inset -2px -2px 5px rgba(255, 255, 255, 0.9);
+    text-align: right;
+    padding: 14px 16px;
+    border-radius: 14px;
+    background: #24292e;
+    color: #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
 .expression {
-    font-size: 2.5rem;
-    opacity: 0.6;
+    font-size: 2.2rem;
+    opacity: 0.75;
+    color: #cfd8dc;
 }
 
 .result {
@@ -50,10 +45,7 @@ body {
     font-weight: bold;
 }
 
-
 .keypad {
-    margin-inline: auto;
-    max-width: 500px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -62,20 +54,40 @@ body {
 
 button {
     flex: 1 1 20%;
-    font-size: 3rem;
-    padding-block: 1rem;
-    background-color: #cbeaef;
-    border-radius: 1rem;
+    aspect-ratio: 1.3;
+    font-size: 2.4rem;
+    border-radius: 14px;
+    border: none;
+    background: #e7ecef;
+    color: #1f2328;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20);
     cursor: pointer;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
 }
 
+button:active {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
 
 .operator {
-    background-color: #cde3a6;
+    background: #4f7cff;
+    color: #ffffff;
 }
 
 .backspace,
 .allClear {
-    background-color: #f1ecad;
+    background: #ffb020;
+    color: #1f2328;
+}
+
+
+
+.equals {
+    background: #fc5c00;
+    color: #fff;
+    font-weight: 600;
 }
